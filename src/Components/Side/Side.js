@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Side.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser} from '@fortawesome/free-solid-svg-icons';
 
 const Side = (props) => {
-    const [time, setTime]=useState(null);
+    const initTime=localStorage.getItem('time');
+    
+    const [time, setTime]=useState(initTime);
+
+    useEffect(()=>{
+     localStorage.setItem('time', time);
+    },[time])
 
     return (
         <div>
@@ -21,11 +27,11 @@ const Side = (props) => {
             <div>
                 <h2>Add a Break</h2>
                 <div className='btn-design'>
-                    <button onClick={()=>{setTime(10)}} type="button">10s</button>
-                    <button onClick={()=>{setTime(20)}} type="button">20s</button>
-                    <button onClick={()=>{setTime(30)}} type="button">30s</button>
-                    <button onClick={()=>{setTime(40)}} type="button">40s</button>
-                    <button onClick={()=>{setTime(50)}} type="button">50s</button>
+                    <button onClick={()=>setTime(10)} type="button">10s</button>
+                    <button onClick={()=>setTime(20)} type="button">20s</button>
+                    <button onClick={()=>setTime(30)} type="button">30s</button>
+                    <button onClick={()=>setTime(40)} type="button">40s</button>
+                    <button onClick={()=>setTime(50)} type="button">50s</button>
                 </div>
             </div> <br />
             <div>
