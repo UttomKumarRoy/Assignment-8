@@ -3,8 +3,8 @@ import './Side.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser} from '@fortawesome/free-solid-svg-icons';
 
-const Side = () => {
-    
+const Side = (props) => {
+
     return (
         <div>
             <div>
@@ -29,7 +29,7 @@ const Side = () => {
             </div> <br />
             <div>
                 <h2>Exercise details</h2>
-                <p>Exercise Time:</p>
+                <p>Exercise Time:{props.data}</p>
                 <p>Break Time:</p>   
             </div> <br />
             <div>
