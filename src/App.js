@@ -1,10 +1,11 @@
 
 import './App.css';
+import Container from './Components/Container/Container';
 
 function App() {
   return (
-    <div className="App">
-     <h1>testing commit</h1>
+    <div className="container">
+     <Container></Container>
     </div>
   );
 }
