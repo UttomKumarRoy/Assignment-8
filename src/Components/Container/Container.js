@@ -31,7 +31,7 @@ const Container = () => {
                  </div>
             </div>
             <div>
-                <h2>Some Questions and Answers</h2>
+                <h2 className='text-white text-center bg-success rounded-5 p-2'>Some Questions and Answers</h2> <br />
                 <Question></Question>
             </div>
         </div>

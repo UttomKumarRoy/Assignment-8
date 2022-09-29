@@ -5,7 +5,7 @@ const Toast = () => {
     const notify = () => toast("Congratulations! You have completed the exercise task.");
     return (
         <div>
-             <button onClick={notify}>Activity Completed</button>
+             <button className='btn btn-primary' onClick={notify}>Activity Completed</button>
              <ToastContainer position='top-center'/>
         </div>
     );

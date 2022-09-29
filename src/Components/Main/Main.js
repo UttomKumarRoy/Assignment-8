@@ -10,7 +10,7 @@ const Main = (props) => {
     const [handleClick,cards]=props.data;
     return (
         <div>
-            <h1>
+            <h1 className='text-info'>
             <FontAwesomeIcon icon={faDumbbell}/>
                 Daily Exercise Club</h1>
             <p>Select Today's Exercise</p>

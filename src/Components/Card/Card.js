@@ -10,7 +10,7 @@ const Card = (props) => {
             <img className='img-fluid' src={image} alt="exercise "></img>
             <h2>{name}</h2>
             <p>Time required: {time}s</p>
-            <button onClick={()=> handleClick(id)}>Add to list</button> <br /> <br /> 
+            <button className='btn btn-primary' onClick={()=> handleClick(id)}>Add to list</button> <br /> <br /> 
         </div>
     );
 };
