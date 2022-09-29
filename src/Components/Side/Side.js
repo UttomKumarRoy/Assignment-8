@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Side.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser} from '@fortawesome/free-solid-svg-icons';
+import Toast from '../Toast/Toast';
 
 const Side = (props) => {
     const initTime=localStorage.getItem('time');
@@ -40,7 +41,7 @@ const Side = (props) => {
                 <p>Break Time: {time}s</p>   
             </div> <br />
             <div>
-                <button>Activity Completed</button>
+                <Toast></Toast>
             </div>
         </div>
     );
