@@ -6,7 +6,7 @@ const Card = (props) => {
     const{id,name,image,time}=card;
    
     return (
-        <div className='col-4'>
+        <div className='col-lg-4 col-sm-12'>
             <img className='img-fluid' src={image} alt="exercise "></img>
             <h2>{name}</h2>
             <p>Time required: {time}s</p>
