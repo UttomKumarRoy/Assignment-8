@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Side.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser} from '@fortawesome/free-solid-svg-icons';
 import Toast from '../Toast/Toast';
@@ -27,7 +26,7 @@ const Side = (props) => {
             </div> <br />
             <div>
                 <h2>Add a Break</h2>
-                <div className='btn-design'>
+                <div className='d-flex flex-row justify-content-between'>
                     <button onClick={()=>setTime(10)} type="button">10s</button>
                     <button onClick={()=>setTime(20)} type="button">20s</button>
                     <button onClick={()=>setTime(30)} type="button">30s</button>
@@ -37,8 +36,8 @@ const Side = (props) => {
             </div> <br />
             <div>
                 <h2>Exercise details</h2>
-                <p>Exercise Time: {props.data}s</p>
-                <p>Break Time: {time}s</p>   
+                <p>Exercise Time: {props.data} seconds</p>
+                <p>Break Time: {time} seconds</p>   
             </div> <br />
             <div>
                 <Toast></Toast>
