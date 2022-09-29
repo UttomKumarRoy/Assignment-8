@@ -6,7 +6,7 @@ const Toast = () => {
     return (
         <div>
              <button className='btn btn-primary' onClick={notify}>Activity Completed</button>
-             <ToastContainer position='top-center'/>
+             <ToastContainer position='top-center'/> <br /> <br />
         </div>
     );
 };
